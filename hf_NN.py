@@ -38,16 +38,3 @@ print(confusion_matrix(y_test, y_pred))
 """
     We see that the Classifier out performs the regressor. This make sense since heart disease is either Y or N.
 """
-
-# Tune Model. This may take a while depending on your computer.
-
-# parameters = {'activation': ['identity', 'logistic', 'tanh', 'relu'], 'solver': ['lbfgs', 'sgd', 'adam'],
-#     'learning_rate_init': [.0001]}
-
-# nn = MLPClassifier(max_iter=10000)
-
-# gs = GridSearchCV(nn, parameters)
-# gs.fit(X_train, y_train)
-
-# print(gs.best_score_)
-# print(gs.best_estimator_)
